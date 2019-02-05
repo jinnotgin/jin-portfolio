@@ -1,0 +1,67 @@
+.hero .container.personal {
+  margin-bottom: 0.5rem;
+}
+
+.hero__employer {
+  flex: 1 0 0;
+}
+
+.hero__headshot {
+  display: none;
+  width: 212px;
+  height: 212px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 0.5em;
+}
+
+.hero__headshot-image {
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+  .hero .container.personal {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1186px) {
+  .hero__headshot {
+    display: inline;
+  }
+}
+
+
+.employer__label {
+  margin-bottom: 1em;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.employer__logo {
+  position: relative;
+  transition: transform ease 0.2s;
+}
+.employer__logo:hover {
+  transform: translateY(-2px);
+  filter: none;
+  opacity: 1;
+}
+
+.kpmgdv-logo {
+  opacity: 0.65;
+  width: 225px;
+}
+
+.ncs-logo {
+  filter: brightness(0%);
+  opacity: 0.65;
+  width: 200px;
+}

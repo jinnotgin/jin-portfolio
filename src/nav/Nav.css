@@ -1,0 +1,32 @@
+.nav {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.nav__list-item {
+  padding: 1em 1em;
+}
+
+.nav__logo {
+  height: 3.5rem;
+  width: 3.5em;
+  transform: rotate(180deg) scaleX(-1);
+  filter: invert(39%) sepia(0%) saturate(50%) hue-rotate(158deg) brightness(91%) contrast(95%);
+  transition: filter .3s ease;
+  /*opacity: 0.6;*/
+  /*filter: invert(47%) sepia(97%) saturate(2120%) hue-rotate(161deg) brightness(94%) contrast(101%); #00a4d6 */
+  /*filter: invert(40%) sepia(82%) saturate(1025%) hue-rotate(167deg) brightness(92%) contrast(104%); #0091d6*/
+}
+
+.nav__logo:hover {
+  filter: invert(40%) sepia(82%) saturate(1025%) hue-rotate(167deg) brightness(92%) contrast(104%);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    height: 4.5rem;
+    width: 4.5rem;
+    /*filter: invert(47%) sepia(97%) saturate(2120%) hue-rotate(161deg) brightness(94%) contrast(101%); #00a4d6 */
+    /*filter: invert(40%) sepia(82%) saturate(1025%) hue-rotate(167deg) brightness(92%) contrast(104%); #0091d6*/
+  }
+}
