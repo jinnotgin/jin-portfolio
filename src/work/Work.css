@@ -21,6 +21,7 @@
   flex: 1 0 0;
   margin: 15px;
   background: white;
+  text-align: center;
   transition: all .2s ease;
 }
 
@@ -34,15 +35,24 @@
   width: 100%;
 }
 
-.work-link-wrapper__content {
+.work-link-wrapper__title {
   font-size: 1.5rem;
   text-decoration: none; 
   color: var(--default-color);
-  text-align: center;
   font-weight: 400;
   margin: 0;
   padding: 1rem;
   padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.work-link-wrapper__content {
+  font-size: 1.1rem;
+  text-decoration: none; 
+  color: var(--default-color);
+  margin: 0;
+  padding: 1rem 2.5rem;
+  padding-top: 0;
 }
 
 .additional-work {
@@ -138,7 +148,7 @@
     flex: 0 0 50%;
   }
 
-  .work-link-wrapper__content {
+  .work-link-wrapper__title {
     font-size: 1.75rem;
   }
   

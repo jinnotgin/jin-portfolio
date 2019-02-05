@@ -16,7 +16,6 @@ class Nav extends Component {
 
   navLogoTransform = () => {
     var svg = this.navLogo.current;
-    console.log(svg);
     
     var CONFIG = {
       duration: 1000,
@@ -26,9 +25,13 @@ class Nav extends Component {
 
     var navLogo = new SVGMorpheus(svg, CONFIG);
 
-    window.setTimeout(function(){
-      navLogo.to('icon');
-    },500);
+    window.setTimeout( () => {
+      navLogo.to('text', {duration: 500});
+      window.setTimeout( () => {
+        navLogo.to('icon');
+      }, 800);
+    }, 100);
+
   }
 
   componentDidMount() {
@@ -42,7 +45,7 @@ class Nav extends Component {
         <div className="container container--horizontally-spaced container--vertically-center">
           <div>
             <svg ref={this.navLogo} className="nav__logo" viewBox="0 0 4010 3990" xmlns="http://www.w3.org/2000/svg">
-              <g id="icon" transform="translate(0.000000,399.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+              <g id="icon" fill="#000000" stroke="none">
                 <path d="M20 2395 l0 -1575 180 0 180 0 0 1400 0 1400 1630 0 1630 0 0 -1630
                   0 -1630 -1810 0 -1810 0 0 -175 0 -175 1990 0 1990 0 0 1980 0 1980 -1990 0
                   -1990 0 0 -1575z" />
@@ -55,7 +58,7 @@ class Nav extends Component {
                   -55 -44 -165 -14 -223 23 -46 74 -99 115 -121 79 -41 258 -54 382 -28 184 39
                   295 143 360 337 50 150 55 227 55 801 l0 527 -295 0 -295 0 0 -25z" />
               </g>
-              <g id="text" transform="translate(0.000000,285.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+              <g id="text" fill="#000000" stroke="none">
                 <path id="simple-cup1" d="M805 2821 c-78 -20 -147 -83 -171 -154 -24 -71 -15 -190 17 -254 49
                   -95 145 -133 302 -120 88 8 152 39 194 95 40 53 53 98 53 182 -1 114 -39 181
                   -128 226 -44 22 -69 27 -145 30 -51 2 -105 0 -122 -5z" />
@@ -75,6 +78,8 @@ class Nav extends Component {
                   432 58 190 58 198 63 943 l4 687 -365 0 -366 0 0 -30z" />
                 <path d="M1360 2070 l0 -30 85 0 85 0 0 -630 0 -630 -80 0 -80 0 0 -30 0 -30
                   430 0 430 0 0 30 0 30 -80 0 -80 0 0 660 0 660 -355 0 -355 0 0 -30z" />
+              </g>
+              <g id="empty" fill="#000000" stroke="none">
               </g>
             </svg>
           </div>

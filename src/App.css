@@ -46,8 +46,8 @@ a.inverse:hover:not(.no-default-hover){
 
 @media screen and (min-width: 768px) {
   section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
   }
 
   .header {

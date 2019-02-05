@@ -36,7 +36,8 @@ class FeaturedWorkItem extends Component {
       <a href="#" className="work-link">
         <div className="work-link-wrapper">
           <img className="work-link-wrapper__thumb" src={props.src} />
-          <h3 className="work-link-wrapper__content">{props.title}</h3>
+          <h3 className="work-link-wrapper__title">{props.title}</h3>
+          <p className="work-link-wrapper__content">{props.content}</p>
         </div>
       </a>
     );
@@ -66,7 +67,7 @@ class AdditionalWorkItem extends Component {
   render() {
     const {props} = this;
     return (
-      <li class="work__list-item">
+      <li className="work__list-item">
         <a className="work__list-item-link no-default-hover" href="#">
           <h2 className="work-title">{props.title}</h2>
           <span className="work-detail work-role">{props.role}</span>

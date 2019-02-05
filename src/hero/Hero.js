@@ -17,7 +17,7 @@ class Hero extends Component {
           </div>
         </div>
         
-        <div class="container container--wrap">
+        <div className="container container--wrap">
           <div className="hero__employer">
             <h3 className="employer__label">Currently:</h3>
             <a href="https://digitalvillage.asia/" target="_blank">
