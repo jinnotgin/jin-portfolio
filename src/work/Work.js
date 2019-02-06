@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './Work.css';
 
 class Work extends Component {
@@ -33,13 +34,13 @@ class FeaturedWorkItem extends Component {
   render() {
     const {props} = this;
     return (
-      <a href="#" className="work-link">
+      <Link to={`/project/${props.slug}`} className="work-link">
         <div className="work-link-wrapper">
-          <img className="work-link-wrapper__thumb" src={props.src} />
+          <img className="work-link-wrapper__thumb" src={props.image} />
           <h3 className="work-link-wrapper__title">{props.title}</h3>
           <p className="work-link-wrapper__content">{props.content}</p>
         </div>
-      </a>
+      </Link>
     );
   }
 }

@@ -16,6 +16,10 @@ section {
   padding-bottom: 3rem;
 }
 
+section:first-child {
+  padding-top: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: var(--default-color);
@@ -50,6 +54,10 @@ a.inverse:hover:not(.no-default-hover){
     padding-bottom: 5.5rem;
   }
 
+  section:first-child {
+    padding-top: 5.5rem;
+  }
+  
   .header {
       font-size: 2.4rem;
       line-height: 2;
