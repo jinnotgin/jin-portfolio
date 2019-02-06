@@ -10,30 +10,9 @@ import {Project, ProjectLabel, ProjectTitle, ProjectImage, ProjectText, ProjectL
 import thumb_coingossip from './images/thumb-coingossip.png';
 import thumb_smartmirror from './images/thumb-smartmirror.png';
 
-import coingossip_main from './images/thumb-coingossip.png';
+import projectsData from './projectsData.json';
 
 import './App.css';
-
-const projectsData = {
-  '/coingossip': [
-    { type: 'name', content: 'CoinGossip'},
-    { type: 'label', content: 'CoinGossip'},
-    { type: 'title', content: 'Making it easy to track social media discussions and news about crytocurrencies.'},
-    { type: 'image', content: 'coingossip-main' },
-    { type: 'label', content: 'CoinGossip Goals'},
-    { type: 'text', content: [
-      "During the cryptocurrency hype in 2018, there were a large amount of online discussions and speculations across multiple social media platforms. To aid in alleviating the mental load of processing such data, I built this tool with the following goals:",
-      { type: 'list', content: [
-        'Know what cyptocurrencies are currently trending in real-time',
-        'Have a list of news articles or disucsssion threads to provide context of trending cryptocurrencies',
-        'Determine the overall sentiment of the trending cryptocurrency, without having to read through the news or discussions manually',
-        'See the price actions in context of the trends and sentiment',
-      ]},
-      { type: 'link', content: 'Visit the site.', href: 'https://coingossip.io'},
-    ]},
-  ],
-}
-
 
 class App extends Component {
   constructor(props) {
@@ -153,12 +132,39 @@ const ProjectContainer = (props) => {
   const projectName = history.location.pathname.replace('/project', '');
 
   let projectArr = projectsData[projectName];
+  
+  let leftArrow = {
+    text: 'Return Home',
+    path: '/',
+  };
+  let rightArrow = {
+    text: 'Return Home',
+    path: '/',
+  };
+
   if (projectArr === undefined) projectArr = [{type: 'error'}];
+  else {
+    const projectOrder = projectsData.projectOrder;
+    const current_index = projectOrder.indexOf(projectName);
+    const max_index = projectOrder.length-1;
+    console.log({projectOrder, current_index})
+
+    if (current_index >= 0 && current_index !== max_index) {
+      rightArrow.path = `/project${projectOrder[current_index+1]}`;
+      rightArrow.text = 'Next Project';
+    }
+
+    if (current_index <= max_index && current_index !== 0) {
+      leftArrow.path = `/project${projectOrder[current_index-1]}`;
+      leftArrow.text = 'Previous Project';
+    }
+
+  }
 
   console.log(projectArr);
   return (
     <div>
-      <Project name={projectArr[0].content}>
+      <Project name={projectArr[0].content} leftArrow={leftArrow} rightArrow={rightArrow}>
         {
           projectArr.map((item, i) => {
             const { type, content } = item;

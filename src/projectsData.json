@@ -1,0 +1,59 @@
+{
+    "projectOrder": ["/coingossip", "/smartmirror"],
+    "/coingossip": [
+      { "type": "name", "content": "CoinGossip"},
+      { "type": "label", "content": "CoinGossip"},
+      { "type": "title", "content": "Making it easy to track social media discussions and news about crytocurrencies."},
+      { "type": "image", "content": "coingossip-main" },
+      { "type": "label", "content": "CoinGossip Goals"},
+      { "type": "text", "content": [
+        "During the cryptocurrency hype in 2018, there were a large amount of online discussions and speculations across multiple social media platforms. To aid in alleviating the mental load of processing such data, I built this tool with the following goals:",
+        { "type": "list", "content": [
+          "Know what cyptocurrencies are currently trending in real-time",
+          "Have a list of news articles or disucsssion threads to provide context of trending cryptocurrencies",
+          "Determine the overall sentiment of the trending cryptocurrency, without having to read through the news or discussions manually",
+          "See the price actions in context of the trends and sentiment"
+        ]},
+        { "type": "link", "content": "Visit the site here.", "href": "https://coingossip.io"}
+      ]},
+      { "type": "image", "content": "coingossip-details" },
+      { "type": "text", "content": [
+        "Users can quickly view all related headlines (and their sentiment) for any cryptocurrency. Sentiment is determined via machine learning algorithms. "
+      ]},
+      { "type": "image", "content": "coingossip-historical" },
+      { "type": "text", "content": [
+        "As CoinGossip gained popularity, many users began submitting their feature suggestions. This led to the development of user-customisable views, such as a historical trend analysis for custom cryptocurrencies."
+      ]},
+      { "type": "text", "content": [
+        "CoinGossip has been featured on various cryptocurrency blogs, such as",
+        { "type": "link", "content": "The Merkle", "href": "https://themerkle.com/what-is-coingossip/"},
+        "and",
+        { "type": "link", "content": "BitcoinExchangeGuide.", "href": "https://bitcoinexchangeguide.com/coingossip-club/"}
+      ]},
+      { "type": "text", "content": [
+        { "type": "link", "content": "Visit the site here.", "href": "https://coingossip.io"}
+      ]}
+    ],
+
+    "/smartmirror": [
+        { "type": "name", "content": "Smart Mirror"},
+        { "type": "label", "content": "Smart Mirror"},
+        { "type": "title", "content": "Designing a front end UI that is easily deployable to most Smart Mirror installations."},
+        { "type": "image", "content": "smartmirror-hardware" },
+        { "type": "label", "content": "Smart Mirror Goals"},
+        { "type": "text", "content": [
+          "The popularity of the Raspberry Pi and IOT devices has led to a increased interest in smart mirrors. A smart mirror is a two-way mirror with an electronic display behind the glass, which can show the viewer different kinds of information in the form of widgets."
+        ]},
+        { "type": "text", "content": [
+          "My goal was to build a web based front end interface that can be easily used for smart mirror installations, and even standalone kiosk devices. Specfically, I wanted the UI to achieve the following:",
+          { "type": "list", "content": [
+            "View date and time information",
+            "Animated visuals of the current tempeature and weather",
+            "News ticker that provuides latest headlines",
+            "See the price actions of stocks and cryptocurrencies"
+          ]}
+        ]},
+        { "type": "image", "content": "smartmirror-main" }
+      ]
+}
+  

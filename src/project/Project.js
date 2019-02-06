@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './Project.css';
 
 let images = {};
@@ -15,9 +16,19 @@ class Project extends Component {
     const {props} = this;
     window.scrollTo(0,0);
     window.document.title = `${props.name} | Jin`;
+
     return (
       <section className="project">
         {props.children}
+
+        <div className="project__links">
+          <Link to={props.leftArrow.path} className="links__arrow left">
+            <span className="links__text">{props.leftArrow.text}</span>
+          </Link>
+          <Link to={props.rightArrow.path} className="links__arrow right">
+            <span className="links__text">{props.rightArrow.text}</span>
+          </Link>
+        </div>
       </section>
     );
   }
@@ -54,11 +65,11 @@ class ProjectTitle extends Component {
 class ProjectImage extends Component {
   render() {
     const {props} = this;
-    console.log(props.src);
+
     return (
       <div className="container">
         {/* <img className="project__image" src={props.src} alt={props.alt} /> */}
-        <img className="project__image" src={images['coingossip-main']} alt={props.alt}/>
+        <img className="project__image" src={images[props.src]} alt={props.alt}/>
       </div>  
     );
   }
@@ -85,7 +96,7 @@ class ProjectList extends Component {
       {
         props.items.map((item, i) => {
           return (
-            <li className="list__item">{item}</li>
+            <li key={i} className="list__item">{item}</li>
           )
         })
       }
