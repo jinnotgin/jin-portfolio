@@ -9,6 +9,8 @@ import {Project, ProjectLabel, ProjectTitle, ProjectImage, ProjectText, ProjectL
 
 import thumb_coingossip from './images/thumb-coingossip.png';
 import thumb_smartmirror from './images/thumb-smartmirror.png';
+import thumb_theresistance from './images/thumb-theresistance.png';
+import thumb_alastair from './images/thumb-alastair.png';
 
 import projectsData from './projectsData.json';
 
@@ -74,47 +76,51 @@ class Home extends Component {
               slug="coingossip"
               image={thumb_coingossip} 
               title="CoinGossip"
-              content="By tracking social media discussions related to cryptocurrencies, this tool applies machine learning algorithms to provide sentiment analysis."
+              content="By utilising machine learning algorithms on social media discussions, this tool provides real-time popularity and sentiment analysis on all cryptocurrencies."
             />
             <FeaturedWorkItem 
               slug="smartmirror"
               image={thumb_smartmirror} 
               title="Smart Mirror"
-              content="This web app serves as the software layer for smart mirror installations, and provides useful information such as weather, news and stock prices. "
+              content="As an easily deployable dashboard that is compatible with many Smart Mirror installations, it provides useful information on the weather, news, stock prices and more. "
+            />
+            <FeaturedWorkItem 
+              slug="theresistance"
+              image={thumb_theresistance} 
+              title="The Resistance"
+              content={"This mobile app serves as a digital replacement to the popular card game \"The Resistance\" (designed by Don Eskridge), eliminating the need for physical game cards."}
+            />
+            <FeaturedWorkItem 
+              slug="alastair"
+              image={thumb_alastair} 
+              title="Alastair"
+              content={"A full stack home automation platform, including console server application, hybrid web application, custom linux scripts for IOT devices and realtime sensor alogrithms."}
             />
           </FeaturedWork>
           <AdditionalWork>
             <AdditionalWorkItem 
-              title="Alastair - Smart Home" 
-              role="A full stack home automation platform, including console server application, web application, custom linux scripts for IOT devices and realtime sensor alogrithms." 
-              company="Personal Project" 
-              year="2016" 
-            />
-            <AdditionalWorkItem 
+              slug="nearly"
               title="Nearly - Weather Kiosk" 
               role="A minimalist kiosk app that provides hyper-accurate forecast alerts for specific regions of Singapore, using data from NEA's 2 Hour Nowcast (via Data.gov.sg)." 
               company="Personal Project" 
               year="2016" 
             />
             <AdditionalWorkItem 
+              slug="relatus"
               title="Relatus - Resource Management" 
               role="A bespoke system designed for the client's business operations (vocational rehabilitation services) with reporting and analysis capabilites." 
               company="SACS Employment Support Services" 
               year="2015" 
             />
             <AdditionalWorkItem 
-              title="The Resistance - Mobile Game" 
-              role='As a web based rendition of the card game "The Resistance", this mobile app replaces the need for physical game cards while retaining all the fun of the board game.' 
-              company="Personal Project" 
-              year="2013" 
-            />
-            <AdditionalWorkItem 
+              slug="timemoo"
               title="TimeMoo - Chatbot Timezone Conversion" 
               role="By processing queries using natural language processing (NLP), users can perform timezone conversion without dealing with timezone complexities." 
               company="Personal Project" 
               year="2013" 
             />
             <AdditionalWorkItem 
+              slug="jtconceirge"
               title="JT Concierge" 
               role="An iOS app that helps users easily obtain quotes for automobile services from Insprop, such as insurance, rentals, limousine and maintenance services." 
               company="Insprop Services"
@@ -172,7 +178,8 @@ const ProjectContainer = (props) => {
               <div>
                 <ProjectLabel>404 Procrastination Error</ProjectLabel>
                 <ProjectTitle>Yikes! This page does not exist!</ProjectTitle>
-                <ProjectText>Jin is probably working on this now... probably.</ProjectText>
+                <ProjectText>This is a beta portfolio site, so not all projects have been populated.</ProjectText>
+                <ProjectText>Please check back at a later date. Thank you!</ProjectText>
               </div>
             )
             else if (type === 'label') return <ProjectLabel>{content}</ProjectLabel>

@@ -11,27 +11,17 @@ class Nav extends Component {
   constructor(props) {
     super(props)
     this.navLogo = React.createRef();
+    this.navLogo_svgMorpheus = false;
 
     this.navLogoTransform = this.navLogoTransform.bind(this);
     this.workClickHandler = this.workClickHandler.bind(this);
   }
 
   navLogoTransform = () => {
-    var svg = this.navLogo.current;
-    
-    var CONFIG = {
-      duration: 1000,
-      easing: 'cubic-in-out',
-      rotation: 'none',
-    };
-
-    var navLogo = new SVGMorpheus(svg, CONFIG);
-
-    window.setTimeout( () => {
-      navLogo.to('text', {duration: 500});
-      window.setTimeout( () => {
-        navLogo.to('icon');
-      }, 600);
+    window.setTimeout(() => {
+      this.navLogo_svgMorpheus.to('text', {duration: 500}, () => {
+        this.navLogo_svgMorpheus.to('icon');
+      });
     }, 100);
   }
 
@@ -49,7 +39,20 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+    var svg = this.navLogo.current;
+    
+    var CONFIG = {
+      duration: 1000,
+      easing: 'cubic-in-out',
+      rotation: 'none',
+    };
+
+    this.navLogo_svgMorpheus = new SVGMorpheus(svg, CONFIG);
+
     this.navLogoTransform();
+  }
+
+  componentDidUpdate() {
   }
 
   render() {
@@ -58,7 +61,7 @@ class Nav extends Component {
       <nav className="nav">
         <div className="container container--horizontally-spaced container--vertically-center">
           <div>
-            <Link to={`/`}>
+            <Link to={`/`} onClick={() => {this.navLogoTransform();}}>
               <svg ref={this.navLogo} className="nav__logo" viewBox="0 0 4010 3990" xmlns="http://www.w3.org/2000/svg">
                 <g id="icon" fill="#000000" stroke="none">
                   <path d="M20 2395 l0 -1575 180 0 180 0 0 1400 0 1400 1630 0 1630 0 0 -1630

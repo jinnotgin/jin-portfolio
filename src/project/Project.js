@@ -80,9 +80,9 @@ class ProjectText extends Component {
     const {props} = this;
     return (
       <div className="project-container">
-        <p className="project__text">
+        <div className="project__text">
           {props.children}
-        </p>  
+        </div>  
       </div>  
     );
   }

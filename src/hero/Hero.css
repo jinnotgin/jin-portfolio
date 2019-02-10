@@ -23,20 +23,6 @@
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
-
-  .hero .container.personal {
-    margin-bottom: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1186px) {
-  .hero__headshot {
-    display: inline;
-  }
-}
-
-
 .employer__label {
   margin-bottom: 1em;
   letter-spacing: 1.4px;
@@ -64,4 +50,17 @@
   filter: brightness(0%);
   opacity: 0.65;
   width: 200px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero .container.personal {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1186px) {
+  .hero__headshot {
+    display: inline;
+  }
 }

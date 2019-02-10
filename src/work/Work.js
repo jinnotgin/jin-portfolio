@@ -52,7 +52,7 @@ class AdditionalWork extends Component {
     return (
         <section className="additional-work">
           <div className="container">
-            <h1 className="header secondary">Additional Work</h1>  
+            <h1 className="header secondary">Other Work</h1>  
           </div>   
           <div className="additional-work-container">
             <ul className="work__list">
@@ -69,13 +69,13 @@ class AdditionalWorkItem extends Component {
     const {props} = this;
     return (
       <li className="work__list-item">
-        <a className="work__list-item-link no-default-hover" href="#">
+        <Link to={`/project/${props.slug}`} className="work__list-item-link no-default-hover">
           <h2 className="work-title">{props.title}</h2>
           <span className="work-detail work-role">{props.role}</span>
           <span className="work-detail work-spacer"> </span>
           <span className="work-detail work-company">{props.company}</span>
           <span className="work-detail work-date">{props.year}</span>
-        </a>
+        </Link>
       </li>
     );
   }

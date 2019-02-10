@@ -144,8 +144,11 @@
 
 @media screen and (min-width: 768px) {
   .featured-work-container {
-      padding-left: 2em;
-      padding-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .work-link {
@@ -159,6 +162,10 @@
   .work-link-wrapper__content {
     padding: 1rem 2.5rem;
     padding-top: 0;
+  }
+
+  .work__list-item-link {
+    max-width: 1200px;
   }
 
   .work__list-item-link .work-detail.work-role {
@@ -178,5 +185,16 @@
     flex: 1 1 10%;
     justify-self: flex-end;
     text-align: right;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .featured-work-container {
+    max-width: 1600px;
+  }
+  
+  .work__list-item-link {
+    max-width: 1400px;
   }
 }
