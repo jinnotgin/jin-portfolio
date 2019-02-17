@@ -1,5 +1,5 @@
 {
-    "projectOrder": ["/coingossip", "/smartmirror", "/theresistance"],
+    "projectOrder": ["/coingossip", "/smartmirror", "/theresistance", "/alastair"],
     "/coingossip": [
       { "type": "name", "content": "CoinGossip"},
       { "type": "label", "content": "CoinGossip - Value Proposition"},
@@ -67,10 +67,10 @@
           "A smart mirror is a two-way mirror with an electronic display behind the glass, which can show the viewer different kinds of information in the form of widgets."
         ]},
         { "type": "text", "content": [
-          "My goal was to build a web based front end interface that can be easily used for smart mirror installations, and even standalone kiosk devices. Specfically, I wanted the UI to achieve the following:",
+          "My goal was to build a web based front end interface that can be easily used for smart mirror installations, and even standalone kiosk devices. Specifically, I wanted the UI to achieve the following:",
           { "type": "list", "content": [
             "View date and time information",
-            "Animated visuals of the current tempeature and weather",
+            "Animated visuals of the current temperature and weather",
             "News ticker that provides the latest headlines",
             "See the price actions of stocks and cryptocurrencies"
           ]}
@@ -108,10 +108,10 @@
         { "type": "text", "content": [
           "I personally discovered this game back in 2013 during my",
           { "type": "link", "content": "National Service in Singapore.", "href": "https://en.wikipedia.org/wiki/National_service_in_Singapore"},
-          "However, while I loved the game, the need to bring the game cards was a constant irritation, as it limited my ability to play this game wtih friends in an impromptu fashion."
+          "While I loved the game, the need to bring the game cards was a constant irritation, as it limited my ability to play this game with friends in an impromptu fashion."
         ]},
         { "type": "text", "content": [
-            "Hence, I set out to develop a digital alterative with the following requirements:",
+            "Hence, I set out to develop a digital alternative with the following requirements:",
           { "type": "list", "content": [
             "Completely eliminate the need for game cards to play the game",
             "No compromises made to original game rules",
@@ -121,7 +121,7 @@
         { "type": "image", "content": "theresistance-main" },
         { "type": "label", "content": "Mobile Web App"},
         { "type": "text", "content": [
-          "My digial recreation of The Resistance was written as a Mobile Web App using jQuery Mobile. Instead of relying on game cards, playing the game now requires only a single mobile phone that is shared among the players during gameplay."
+          "My digital recreation of The Resistance was written as a Mobile Web App using jQuery Mobile. Instead of relying on game cards, playing the game now requires only a single mobile phone that is shared among the players during gameplay."
         ]},
         { "type": "text", "content": [
           "To try this out,",
@@ -130,6 +130,68 @@
         { "type": "text", "content": [
           "This project was completed in December 2013, and is no longer actively maintained."
         ]}
-      ]
+    ], 
+    
+    "/alastair": [
+        { "type": "name", "content": "Alastair"},
+        { "type": "label", "content": "Alastair - Value Proposition"},
+        { "type": "title", "content": "A private cloud-less home automation platform that serves an ecosystem of IOT smart devices and sensors."},
+        { "type": "image", "content": "alastair-illustration" },
+        { "type": "label", "content": "The Pain Points"},
+        { "type": "text", "content": [
+          "As IOT devices and sensors become increasingly cheaper and more sophiscated, the prospect of an connected smart home is now an inevitability. However, almost all implementaions of smart home devices requires a third party service provider (Amazon Alexa, Xiaomi Mi Home, Nest, Samsung Smart Things), which raises potential security concerns."
+        ]},
+        { "type": "text", "content": [
+          "Back in 2016, I was very interested in building my own smart home using IOT boards and sensors. I set out to achieve the following:",
+          { "type": "list", "content": [
+            "A smart home implementation without any reliance on third party (cloud) services",
+            "Wifi enabled eletrical outlets, lights and cooling (fan and air conditioners)",
+            "Automatic regulation of lighting and cooling devices based on room temperature and ambient light",
+            "User presence detection, so as to turn off devices when user is off premise",
+            "Occupancy detection, so as to know number of users that are currently in the house",
+            "Security camera, with footage that can be streamed over the internet"
+          ]}
+        ]},
+        { "type": "image", "content": "alastair-main" },
+        { "type": "label", "content": "Alastair - Full Stack Platform"},
+        { "type": "text", "content": [
+          "As a full stack solution, the Alastair project consists of many hardware and software components."
+        ]},
+        { "type": "text", "content": [          
+          "On the hardware side, it involved the following:",
+          { "type": "list", "content": [
+            "Raspberry Pi 1 Model B+ (the main server)",
+            "Wifi and Bluetooth USB dongles (for Raspberry Pi)",
+            "Kankun ESP8266 Wifi Plug (with OpenWRT)",
+            "Yeelight Light Bulbs (with Developer Mode turned on)",
+            "Keyes TSOP1838 IR Receiver",
+            "IR LED",
+            "DS18B20 Temperature Sensor",
+            "LM393 Light Sensor",
+            "PIR Motion Sensor",
+            "Alcatel One Touch Pixi 3 (repurposed as security camera)"
+          ]}
+        ]},
+        { "type": "text", "content": [          
+          "On the software side, it involved the following:",
+          { "type": "list", "content": [
+            "Python watchdog scripts, which performs automated control over devices based on real-time sensors and device information",
+            "Custom OpenWRT scripts for Kankun ESP8266",
+            "LIRC, for infared interfacing with air conditioners",
+            "EventGhost, an automation tool for Windows devices",
+            "Python communication scripts, for interfacing with devices over Wifi",
+            "Python sensor scripts, to convert analog sensor informaton into digital data",
+            "Bash scripts, for performing Wifi ARP scans and Bluetooth beacon detection",
+            "Web server, to provide the front-end hybrid application for desktop and mobile use"
+          ]}
+        ]},
+        { "type": "text", "content": [
+          "The source code for Alastair",
+          { "type": "link", "content": "can be found on this Github repository.", "href": "https://github.com/jinnotgin/alastair"}
+        ]},
+        { "type": "text", "content": [
+          "This project was completed in March 2016 and has been discontinued."
+        ]}
+    ]
 }
   

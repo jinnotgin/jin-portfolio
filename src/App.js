@@ -94,7 +94,7 @@ class Home extends Component {
               slug="alastair"
               image={thumb_alastair} 
               title="Alastair"
-              content={"A full stack home automation platform, including console server application, hybrid web application, custom linux scripts for IOT devices and realtime sensor alogrithms."}
+              content={"A private home automation platform with its own console server application, hybrid web application, custom linux scripts for IOT devices and realtime sensor alogrithms."}
             />
           </FeaturedWork>
           <AdditionalWork>
