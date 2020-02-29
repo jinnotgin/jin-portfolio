@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import logo_kpmg_dv from '../images/logo-kpmgdv.png';
-import logo_ncs from '../images/logo-ncs.svg';
-import profilepic_jin from '../images/profilepic-jin.jpg';
-import './Hero.css';
+import React, { Component } from "react";
+import logo_ufinity from "../images/logo-ufinity.png";
+import logo_kpmg_dv from "../images/logo-kpmgdv.png";
+import logo_ncs from "../images/logo-ncs.svg";
+import profilepic_jin from "../images/profilepic-jin.jpg";
+import "./Hero.css";
 
 class Hero extends Component {
   render() {
@@ -34,18 +35,30 @@ class Hero extends Component {
             <img className="hero__headshot-image" src={profilepic_jin} />
           </div>
         </div>
-        
+
         <div className="container container--wrap">
           <div className="hero__employer">
             <h3 className="employer__label">Currently:</h3>
-            <a href="https://digitalvillage.asia/" target="_blank">
-              <img className="employer__logo kpmgdv-logo"src={logo_kpmg_dv} />
+            <a href="https://www.ufinity.com/" target="_blank">
+              <img
+                className="employer__logo decolourize-logo"
+                src={logo_ufinity}
+              />
             </a>
           </div>
           <div className="hero__employer">
             <h3 className="employer__label">Previously:</h3>
+            <a
+              href="https://home.kpmg/sg/en/home/campaigns/2019/09/digital-village.html"
+              target="_blank"
+            >
+              <img className="employer__logo kpmgdv-logo" src={logo_kpmg_dv} />
+            </a>
             <a href="https://www.ncs.com.sg/" target="_blank">
-              <img className="employer__logo ncs-logo"src={logo_ncs} />
+              <img
+                className="employer__logo decolourize-logo last"
+                src={logo_ncs}
+              />
             </a>
           </div>
         </div>
