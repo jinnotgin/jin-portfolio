@@ -5,8 +5,13 @@ import './Project.css';
 let images = {};
 function importAll (r) {
   r.keys().forEach(key => {
-    const keyName = key.replace('./', '').split('.')[0];
-    images[keyName] = r(key);
+    const key_newName = key.replace("./", "").split(".")[0];
+    const value = r(key);
+    images[key_newName] = value;
+
+    // preload (todo: lazy load)
+    const img = new Image();
+    img.src = value;
   });
 }
 importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
