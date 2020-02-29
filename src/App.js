@@ -97,7 +97,8 @@ class Home extends Component {
 
   render() {
     window.scrollTo(0, 0);
-    window.document.title = "Jin | Product Manager, Full Stack Developer";
+    window.document.title =
+      "Jin | Full Stack Developer, Agile Business Analyst";
     const { sections } = this.props;
     return (
       <div>
