@@ -235,11 +235,12 @@ const ProjectContainer = (props) => {
 				rightArrow={rightArrow}
 			>
 				{projectArr.map((item, i) => {
+					// TODO: make iterable items uniquely keyed
 					const { type, content } = item;
 					switch (type) {
 						case "error": {
 							return (
-								<div>
+								<div key={i}>
 									<ProjectLabel>Procrastination Error</ProjectLabel>
 									<ProjectTitle>
 										Whoops - this page is still empty 😅
@@ -256,17 +257,17 @@ const ProjectContainer = (props) => {
 							);
 						}
 						case "label": {
-							return <ProjectLabel>{content}</ProjectLabel>;
+							return <ProjectLabel key={i}>{content}</ProjectLabel>;
 						}
 						case "title": {
-							return <ProjectTitle>{content}</ProjectTitle>;
+							return <ProjectTitle key={i}>{content}</ProjectTitle>;
 						}
 						case "image": {
-							return <ProjectImage src={content} />;
+							return <ProjectImage key={i} src={content} />;
 						}
 						case "text": {
 							return (
-								<ProjectText>
+								<ProjectText key={i}>
 									{content.map((text_item) => {
 										if (typeof text_item === "string") return `${text_item} `;
 										else if (typeof text_item === "object") {
