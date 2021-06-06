@@ -26,13 +26,15 @@ import thumb_smartmirror from "./images/thumb-smartmirror.png";
 import thumb_theresistance from "./images/thumb-theresistance.png";
 import thumb_alastair from "./images/thumb-alastair.png";
 
-import projectsData from "./projectsData.json";
-
 import "./App.css";
 
 class App extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			loading: true,
+			projectsData: {},
+		};
 		this.sections = {
 			work: React.createRef(),
 			contact: React.createRef(),
@@ -47,6 +49,21 @@ class App extends Component {
 			block: "start",
 		});
 	};
+
+	componentDidMount() {
+		// fetch project data
+		const dataUrl = `${process.env.PUBLIC_URL}/data/projects.json`;
+		fetch(dataUrl)
+			.then((response) => response.json())
+			.then((data) => {
+				console.log("This is your data", data);
+				this.setState({
+					loading: false,
+					projectsData: data,
+				});
+				console.log(this.state.loading);
+			});
+	}
 
 	render() {
 		return (
@@ -71,7 +88,12 @@ class App extends Component {
 					/>
 					<Route
 						path="/project"
-						render={(history) => <ProjectContainer history={history} />}
+						render={(history) => (
+							<ProjectContainer
+								history={history}
+								projectsData={this.state.projectsData}
+							/>
+						)}
 					/>
 					{/*<Route path="/about" component={About} />*/}
 
@@ -88,8 +110,8 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		const { history, sections, scrollToFunction } = this.props;
-
+		// scroll to Work if needed
+		const { history, scrollToFunction } = this.props;
 		const loadWithScrollToWork =
 			history.location.hash === "#work" && history.location.pathname === "/";
 		if (loadWithScrollToWork) scrollToFunction("work");
@@ -172,7 +194,7 @@ class Home extends Component {
 }
 
 const ProjectContainer = (props) => {
-	const { history } = props;
+	const { history, projectsData } = props;
 	const projectName = history.location.pathname.replace("/project", "");
 
 	let projectArr = projectsData[projectName];
