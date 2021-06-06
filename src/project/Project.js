@@ -21,7 +21,10 @@ class Project extends Component {
 	render() {
 		const { props } = this;
 		window.scrollTo(0, 0);
-		window.document.title = `${props.name} | Jin`;
+
+		window.document.title = `${
+			props.name === undefined ? "😅" : props.name
+		} | Jin`;
 
 		return (
 			<section className="project">
