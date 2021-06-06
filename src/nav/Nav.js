@@ -135,9 +135,7 @@ class Nav extends Component {
 								this.navLogoTransform();
 							}}
 						>
-							<a className="nav__list-item" href="#">
-								Home
-							</a>
+							<span className="nav__list-item">Home</span>
 						</Link>
 						<a
 							className="nav__list-item"
