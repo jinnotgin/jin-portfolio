@@ -33,6 +33,12 @@
 	display: none;
 }
 
+@media screen and (min-width: 460px) {
+	.hidden-mobile {
+		display: unset;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.nav {
 		font-size: 1.4rem;
@@ -44,9 +50,5 @@
 		width: 4.5rem;
 		/*filter: invert(47%) sepia(97%) saturate(2120%) hue-rotate(161deg) brightness(94%) contrast(101%); #00a4d6 */
 		/*filter: invert(40%) sepia(82%) saturate(1025%) hue-rotate(167deg) brightness(92%) contrast(104%); #0091d6*/
-	}
-
-	.hidden-mobile {
-		display: unset;
 	}
 }
