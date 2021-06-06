@@ -1,197 +1,375 @@
 {
-    "projectOrder": ["/coingossip", "/smartmirror", "/theresistance", "/alastair"],
-    "/coingossip": [
-      { "type": "name", "content": "CoinGossip"},
-      { "type": "label", "content": "CoinGossip - Value Proposition"},
-      { "type": "title", "content": "Simplifying the tracking of news articles and social media discussions about cryptocurrencies."},
-      { "type": "image", "content": "coingossip-main" },
-      { "type": "label", "content": "The Pain Points"},
-      { "type": "text", "content": [
-        "During the cryptocurrency hype in 2018, there was a high volume of online discussions and speculations about cryptocurrencies across multiple social media platforms. However, as these discussions were extremely disorganised, many users (especially investors and market speculators) found it difficult to obtain insightful information regarding any specific cryptocurrency."
-      ]},
-      { "type": "text", "content": [
-        "To tackle this issue, I set out to solve the following pain points:",
-        { "type": "list", "content": [
-          "Know what cyptocurrencies are currently trending in real-time",
-          "Have a list of news articles or disucsssion threads to provide context of trending cryptocurrencies",
-          "Determine the overall sentiment of the trending cryptocurrency, without having to read through the news or discussions manually",
-          "See the price actions in context of the trends and sentiment"
-        ]}
-      ]},
-      { "type": "image", "content": "coingossip-popularity" },
-      { "type": "label", "content": "Real-Time Popularity"},
-      { "type": "text", "content": [
-        "Cryptocurrencies are listed in terms of their popularity on the internet (\"Gossip\"). For example, when evaluating a single Reddit post that is related to a cryptocurrency, CoinGossip will also include its title, its upvotes and its comments into consideration. "
-      ]},
-      { "type": "text", "content": [
-        "Data visualisation aids are used as well, including a pie chart and a scoreboard."
-      ]},
-      { "type": "image", "content": "coingossip-details" },
-      { "type": "label", "content": "Sentiment Analysis"},
-      { "type": "text", "content": [
-        "Users can quickly view all related headlines or discussions for any cryptocurrency. To reduce the need for manually reading every news item, a machine learning algorithm is applied to deduce the overall Sentiment of each news item. The sentiment can be seen from thumbs up (positive) and thumbs down (negative) icon."
-      ]},
-      { "type": "image", "content": "coingossip-historical" },
-      { "type": "label", "content": "Historical Trend"},
-      { "type": "text", "content": [
-        "As CoinGossip gained popularity, many users began submitting their feature suggestions. This led to the development of many user-requested features, with the most requested one being a historical trend analysis for custom cryptocurrencies."
-      ]},
-      { "type": "text", "content": [
-        " "
-      ]},
-      { "type": "label", "content": "Live Demo"},
-      { "type": "text", "content": [
-          "To try out CoinGossip,",
-        { "type": "link", "content": "visit the site here.", "href": "https://coingossip.io"}
-      ]},
-      { "type": "text", "content": [
-        "CoinGossip has been featured on various cryptocurrency blogs, such as",
-        { "type": "link", "content": "The Merkle", "href": "https://themerkle.com/what-is-coingossip/"},
-        "and",
-        { "type": "link", "content": "BitcoinExchangeGuide.", "href": "https://bitcoinexchangeguide.com/coingossip-club/"}
-      ]},
-      { "type": "text", "content": [
-        "This service was launched in February 2018 and is still in active development. The tech stack includes React, Django REST Framework, Redux and Python server scripts (for data scraping and machine learning)."
-      ]}
-    ],
+	"projectOrder": [
+		"/coingossip",
+		"/smartmirror",
+		"/theresistance",
+		"/alastair"
+	],
+	"/coingossip": [
+		{ "type": "name", "content": "CoinGossip" },
+		{ "type": "label", "content": "CoinGossip - Value Proposition" },
+		{
+			"type": "title",
+			"content": "Simplifying the tracking of news articles and social media discussions about cryptocurrencies."
+		},
+		{ "type": "image", "content": "coingossip-main" },
+		{
+			"type": "text",
+			"content": [
+				"To try out CoinGossip,",
+				{
+					"type": "link",
+					"content": "visit the site here!",
+					"href": "https://coingossip.net"
+				},
+				"👈"
+			]
+		},
+		{ "type": "label", "content": " ", "remarks": "divider" },
+		{ "type": "label", "content": "The Pain Points" },
+		{
+			"type": "text",
+			"content": [
+				"During the cryptocurrency hype in 2018, there was a high volume of online discussions and speculations about cryptocurrencies across multiple social media platforms. However, as these discussions were extremely disorganised, many users (especially investors and market speculators) found it difficult to obtain insightful information regarding any specific cryptocurrency."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"To tackle this issue, I set out to solve the following pain points:",
+				{
+					"type": "list",
+					"content": [
+						"Know what cyptocurrencies are currently trending in real-time",
+						"Have a list of news articles or disucsssion threads to provide context of trending cryptocurrencies",
+						"Determine the overall sentiment of the trending cryptocurrency, without having to read through the news or discussions manually",
+						"See the price actions in context of the trends and sentiment"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "coingossip-popularity" },
+		{ "type": "label", "content": "Real-Time Popularity" },
+		{
+			"type": "text",
+			"content": [
+				"Cryptocurrencies are listed in terms of their popularity on the internet (\"Gossip\"). For example, when evaluating a single Reddit post that is related to a cryptocurrency, CoinGossip will also include its title, its upvotes and its comments into consideration. "
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"Data visualisation aids are used as well, including a pie chart and a scoreboard."
+			]
+		},
+		{ "type": "image", "content": "coingossip-details" },
+		{ "type": "label", "content": "Sentiment Analysis" },
+		{
+			"type": "text",
+			"content": [
+				"Users can quickly view all related headlines or discussions for any cryptocurrency. To reduce the need for manually reading every news item, a machine learning algorithm is applied to deduce the overall Sentiment of each news item. The sentiment can be seen from thumbs up (positive) and thumbs down (negative) icon."
+			]
+		},
+		{ "type": "image", "content": "coingossip-historical" },
+		{ "type": "label", "content": "Historical Trend" },
+		{
+			"type": "text",
+			"content": [
+				"As CoinGossip gained popularity, many users began submitting their feature suggestions. This led to the development of many user-requested features, with the most requested one being a historical trend analysis for custom cryptocurrencies."
+			]
+		},
+		{ "type": "text", "content": [" "] },
+		{ "type": "label", "content": "Live Demo" },
+		{
+			"type": "text",
+			"content": [
+				"To try out CoinGossip,",
+				{
+					"type": "link",
+					"content": "visit the site here!",
+					"href": "https://coingossip.net"
+				},
+				"👈"
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"CoinGossip has been featured on various cryptocurrency blogs, such as",
+				{
+					"type": "link",
+					"content": "The Merkle",
+					"href": "https://themerkle.com/what-is-coingossip/"
+				},
+				"and",
+				{
+					"type": "link",
+					"content": "BitcoinExchangeGuide.",
+					"href": "https://bitcoinexchangeguide.com/coingossip-club/"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"This service was launched in February 2018 and is still in active development. The tech stack includes React, Django REST Framework, Redux and Python server scripts (for data scraping and machine learning)."
+			]
+		}
+	],
 
-    "/smartmirror": [
-        { "type": "name", "content": "Smart Mirror"},
-        { "type": "label", "content": "Smart Mirror - Value Proposition"},
-        { "type": "title", "content": "An easily deployable front-end dashboard that is compatible with most Smart Mirror installations."},
-        { "type": "image", "content": "smartmirror-hardware" },
-        { "type": "label", "content": "The Goal"},
-        { "type": "text", "content": [
-          "In 2017, the popularity of the Raspberry Pi and IOT devices has led to an",
-          { "type": "link", "content": "increased interest in smart mirrors.", "href": "https://www.theverge.com/circuitbreaker/2017/8/17/16158104/smart-mirror-diy-raspberry-pi-commute-weather-time-gadget"},
-          "A smart mirror is a two-way mirror with an electronic display behind the glass, which can show the viewer different kinds of information in the form of widgets."
-        ]},
-        { "type": "text", "content": [
-          "My goal was to build a web based front end interface that can be easily used for smart mirror installations, and even standalone kiosk devices. Specifically, I wanted the UI to achieve the following:",
-          { "type": "list", "content": [
-            "View date and time information",
-            "Animated visuals of the current temperature and weather",
-            "News ticker that provides the latest headlines",
-            "See the price actions of stocks and cryptocurrencies"
-          ]}
-        ]},
-        { "type": "image", "content": "smartmirror-main" },
-        { "type": "label", "content": "Ease of Deployment"},
-        { "type": "text", "content": [
-          "This Smart Mirror UI is written completely using web technologies (HTML, Javascript) as a Single-Page-Application (SPA). It relies on other JSON APIs for its upstream information, such as:",
-          { "type": "list", "content": [
-            "Data.gov.sg for weather information",
-            "rss2json for news headlines",
-            "Yahoo Finance for stock prices",
-            "CoinMarketCap for cryptocurrency prices"
-          ]}
-        ]},
-        { "type": "text", "content": [
-          "As an SPA, it is easy to deploy to any lightweight IOT devices across many CPU architectures (arm, x86) and operating systems (Android, Linux distros, Windows IoT)."
-        ]},
-        { "type": "text", "content": [
-          "This project was completed in December 2017."
-        ]}
-    ], 
-    
-    "/theresistance": [
-        { "type": "name", "content": "The Resistance"},
-        { "type": "label", "content": "The Resistance - Value Proposition"},
-        { "type": "title", "content": "To digitise the mechanics of a board game while preserving the magic of playing in person."},
-        { "type": "image", "content": "theresistance-cards" },
-        { "type": "label", "content": "The Pain Point"},
-        { "type": "text", "content": [
-          { "type": "link", "content": "The Resistance (by Don Eskridge)", "href": "https://boardgamegeek.com/boardgame/41114/resistance"},
-          "was released in 2009 as a card game of social deduction, and",
-          { "type": "link", "content": "was recently crowned as the \"best party game\" by Kotaku AU in 2018.", "href": "https://www.kotaku.com.au/2018/11/a-strategy-guide-to-the-best-party-game-resistance/"}
-        ]},
-        { "type": "text", "content": [
-          "I personally discovered this game back in 2013 during my",
-          { "type": "link", "content": "National Service in Singapore.", "href": "https://en.wikipedia.org/wiki/National_service_in_Singapore"},
-          "While I loved the game, the need to bring the game cards was a constant irritation, as it limited my ability to play this game with friends in an impromptu fashion."
-        ]},
-        { "type": "text", "content": [
-            "Hence, I set out to develop a digital alternative with the following requirements:",
-          { "type": "list", "content": [
-            "Completely eliminate the need for game cards to play the game",
-            "No compromises made to original game rules",
-            "Retain the physical feel of playing board games in person"
-          ]}
-        ]},
-        { "type": "image", "content": "theresistance-main" },
-        { "type": "label", "content": "Mobile Web App"},
-        { "type": "text", "content": [
-          "My digital recreation of The Resistance was written as a Mobile Web App using jQuery Mobile. Instead of relying on game cards, playing the game now requires only a single mobile phone that is shared among the players during gameplay."
-        ]},
-        { "type": "text", "content": [
-          "To try this out,",
-          { "type": "link", "content": "visit this link on a mobile device.", "href": "https://linjin.me/theresistance/"}
-        ]},
-        { "type": "text", "content": [
-          "This project was completed in December 2013, and is no longer actively maintained."
-        ]}
-    ], 
-    
-    "/alastair": [
-        { "type": "name", "content": "Alastair"},
-        { "type": "label", "content": "Alastair - Value Proposition"},
-        { "type": "title", "content": "A private cloud-less home automation platform that serves an ecosystem of IOT smart devices and sensors."},
-        { "type": "image", "content": "alastair-illustration" },
-        { "type": "label", "content": "The Pain Points"},
-        { "type": "text", "content": [
-          "As IOT devices and sensors become increasingly cheaper and more sophiscated, the prospect of an connected smart home is now an inevitability. However, almost all implementaions of smart home devices requires a third party service provider (Amazon Alexa, Xiaomi Mi Home, Nest, Samsung Smart Things), which raises potential security concerns."
-        ]},
-        { "type": "text", "content": [
-          "Back in 2016, I was very interested in building my own smart home using IOT boards and sensors. I set out to achieve the following:",
-          { "type": "list", "content": [
-            "A smart home implementation without any reliance on third party (cloud) services",
-            "Wifi enabled eletrical outlets, lights and cooling (fan and air conditioners)",
-            "Automatic regulation of lighting and cooling devices based on room temperature and ambient light",
-            "User presence detection, so as to turn off devices when user is off premise",
-            "Occupancy detection, so as to know number of users that are currently in the house",
-            "Security camera, with footage that can be streamed over the internet"
-          ]}
-        ]},
-        { "type": "image", "content": "alastair-main" },
-        { "type": "label", "content": "Alastair - Full Stack Platform"},
-        { "type": "text", "content": [
-          "As a full stack solution, the Alastair project consists of many hardware and software components."
-        ]},
-        { "type": "text", "content": [          
-          "On the hardware side, it involved the following:",
-          { "type": "list", "content": [
-            "Raspberry Pi 1 Model B+ (the main server)",
-            "Wifi and Bluetooth USB dongles (for Raspberry Pi)",
-            "Kankun ESP8266 Wifi Plug (with OpenWRT)",
-            "Yeelight Light Bulbs (with Developer Mode turned on)",
-            "Keyes TSOP1838 IR Receiver",
-            "IR LED",
-            "DS18B20 Temperature Sensor",
-            "LM393 Light Sensor",
-            "PIR Motion Sensor",
-            "Alcatel One Touch Pixi 3 (repurposed as security camera)"
-          ]}
-        ]},
-        { "type": "text", "content": [          
-          "On the software side, it involved the following:",
-          { "type": "list", "content": [
-            "Python watchdog scripts, which performs automated control over devices based on real-time sensors and device information",
-            "Custom OpenWRT scripts for Kankun ESP8266",
-            "LIRC, for infared interfacing with air conditioners",
-            "EventGhost, an automation tool for Windows devices",
-            "Python communication scripts, for interfacing with devices over Wifi",
-            "Python sensor scripts, to convert analog sensor informaton into digital data",
-            "Bash scripts, for performing Wifi ARP scans and Bluetooth beacon detection",
-            "Web server, to provide the front-end hybrid application for desktop and mobile use"
-          ]}
-        ]},
-        { "type": "text", "content": [
-          "The source code for Alastair",
-          { "type": "link", "content": "can be found on this Github repository.", "href": "https://github.com/jinnotgin/alastair"}
-        ]},
-        { "type": "text", "content": [
-          "This project was completed in March 2016 and has been discontinued."
-        ]}
-    ]
+	"/smartmirror": [
+		{ "type": "name", "content": "Smart Mirror" },
+		{ "type": "label", "content": "Smart Mirror - Value Proposition" },
+		{
+			"type": "title",
+			"content": "An easily deployable front-end dashboard that is compatible with most Smart Mirror installations."
+		},
+		{ "type": "image", "content": "smartmirror-hardware" },
+		{ "type": "label", "content": "The Goal" },
+		{
+			"type": "text",
+			"content": [
+				"In 2017, the popularity of the Raspberry Pi and IOT devices has led to an",
+				{
+					"type": "link",
+					"content": "increased interest in smart mirrors.",
+					"href": "https://www.theverge.com/circuitbreaker/2017/8/17/16158104/smart-mirror-diy-raspberry-pi-commute-weather-time-gadget"
+				},
+				"A smart mirror is a two-way mirror with an electronic display behind the glass, which can show the viewer different kinds of information in the form of widgets."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"My goal was to build a web based front end interface that can be easily used for smart mirror installations, and even standalone kiosk devices. Specifically, I wanted the UI to achieve the following:",
+				{
+					"type": "list",
+					"content": [
+						"View date and time information",
+						"Animated visuals of the current temperature and weather",
+						"News ticker that provides the latest headlines",
+						"See the price actions of stocks and cryptocurrencies"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "smartmirror-main" },
+		{ "type": "label", "content": "Ease of Deployment" },
+		{
+			"type": "text",
+			"content": [
+				"This Smart Mirror UI is written completely using web technologies (HTML, Javascript) as a Single-Page-Application (SPA). It relies on other JSON APIs for its upstream information, such as:",
+				{
+					"type": "list",
+					"content": [
+						"Data.gov.sg for weather information",
+						"rss2json for news headlines",
+						"Yahoo Finance for stock prices",
+						"CoinMarketCap for cryptocurrency prices"
+					]
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"As an SPA, it is easy to deploy to any lightweight IOT devices across many CPU architectures (arm, x86) and operating systems (Android, Linux distros, Windows IoT)."
+			]
+		},
+		{
+			"type": "text",
+			"content": ["This project was completed in December 2017."]
+		}
+	],
+
+	"/theresistance": [
+		{ "type": "name", "content": "The Resistance" },
+		{ "type": "label", "content": "The Resistance - Value Proposition" },
+		{
+			"type": "title",
+			"content": "To digitise the mechanics of a board game while preserving the magic of playing in person."
+		},
+		{ "type": "image", "content": "theresistance-cards" },
+		{
+			"type": "text",
+			"content": [
+				"To try this out,",
+				{
+					"type": "link",
+					"content": "visit this link on a mobile device!",
+					"href": "https://jinn.me/theresistance/"
+				},
+				"👈"
+			]
+		},
+		{ "type": "label", "content": " ", "remark": "divider" },
+		{ "type": "label", "content": "The Pain Point" },
+		{
+			"type": "text",
+			"content": [
+				{
+					"type": "link",
+					"content": "The Resistance (by Don Eskridge)",
+					"href": "https://boardgamegeek.com/boardgame/41114/resistance"
+				},
+				"was released in 2009 as a card game of social deduction, and",
+				{
+					"type": "link",
+					"content": "was recently crowned as the \"best party game\" by Kotaku AU in 2018.",
+					"href": "https://www.kotaku.com.au/2018/11/a-strategy-guide-to-the-best-party-game-resistance/"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"I personally discovered this game back in 2013 during my",
+				{
+					"type": "link",
+					"content": "National Service in Singapore.",
+					"href": "https://en.wikipedia.org/wiki/National_service_in_Singapore"
+				},
+				"While I loved the game, the need to bring the game cards was a constant irritation, as it limited my ability to play this game with friends in an impromptu fashion."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"Hence, I set out to develop a digital alternative with the following requirements:",
+				{
+					"type": "list",
+					"content": [
+						"Completely eliminate the need for game cards to play the game",
+						"No compromises made to original game rules",
+						"Retain the physical feel of playing board games in person"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "theresistance-main" },
+		{ "type": "label", "content": "Mobile Web App" },
+		{
+			"type": "text",
+			"content": [
+				"My digital recreation of The Resistance was written as a Mobile Web App using jQuery Mobile. Instead of relying on game cards, playing the game now requires only a single mobile phone that is shared among the players during gameplay."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"To try this out,",
+				{
+					"type": "link",
+					"content": "visit this link on a mobile device!",
+					"href": "https://jinn.me/theresistance/"
+				},
+				"👈"
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"This project was completed in December 2013, and is no longer actively maintained."
+			]
+		}
+	],
+
+	"/alastair": [
+		{ "type": "name", "content": "Alastair" },
+		{ "type": "label", "content": "Alastair - Value Proposition" },
+		{
+			"type": "title",
+			"content": "A private cloud-less home automation platform that serves an ecosystem of IOT smart devices and sensors."
+		},
+		{ "type": "image", "content": "alastair-illustration" },
+		{ "type": "label", "content": "The Pain Points" },
+		{
+			"type": "text",
+			"content": [
+				"As IOT devices and sensors become increasingly cheaper and more sophiscated, the prospect of an connected smart home is now an inevitability. However, almost all implementaions of smart home devices requires a third party service provider (Amazon Alexa, Xiaomi Mi Home, Nest, Samsung Smart Things), which raises potential security concerns."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"Back in 2016, I was very interested in building my own smart home using IOT boards and sensors. I set out to achieve the following:",
+				{
+					"type": "list",
+					"content": [
+						"A smart home implementation without any reliance on third party (cloud) services",
+						"Wifi enabled eletrical outlets, lights and cooling (fan and air conditioners)",
+						"Automatic regulation of lighting and cooling devices based on room temperature and ambient light",
+						"User presence detection, so as to turn off devices when user is off premise",
+						"Occupancy detection, so as to know number of users that are currently in the house",
+						"Security camera, with footage that can be streamed over the internet"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "alastair-main" },
+		{ "type": "label", "content": "Alastair - Full Stack Platform" },
+		{
+			"type": "text",
+			"content": [
+				"As a full stack solution, the Alastair project consists of many hardware and software components."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"On the hardware side, it involved the following:",
+				{
+					"type": "list",
+					"content": [
+						"Raspberry Pi 1 Model B+ (the main server)",
+						"Wifi and Bluetooth USB dongles (for Raspberry Pi)",
+						"Kankun ESP8266 Wifi Plug (with OpenWRT)",
+						"Yeelight Light Bulbs (with Developer Mode turned on)",
+						"Keyes TSOP1838 IR Receiver",
+						"IR LED",
+						"DS18B20 Temperature Sensor",
+						"LM393 Light Sensor",
+						"PIR Motion Sensor",
+						"Alcatel One Touch Pixi 3 (repurposed as security camera)"
+					]
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"On the software side, it involved the following:",
+				{
+					"type": "list",
+					"content": [
+						"Python watchdog scripts, which performs automated control over devices based on real-time sensors and device information",
+						"Custom OpenWRT scripts for Kankun ESP8266",
+						"LIRC, for infared interfacing with air conditioners",
+						"EventGhost, an automation tool for Windows devices",
+						"Python communication scripts, for interfacing with devices over Wifi",
+						"Python sensor scripts, to convert analog sensor informaton into digital data",
+						"Bash scripts, for performing Wifi ARP scans and Bluetooth beacon detection",
+						"Web server, to provide the front-end hybrid application for desktop and mobile use"
+					]
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"The source code for Alastair",
+				{
+					"type": "link",
+					"content": "can be found on this Github repository.",
+					"href": "https://github.com/jinnotgin/alastair"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"This project was completed in March 2016 and has been discontinued."
+			]
+		}
+	]
 }
-  
