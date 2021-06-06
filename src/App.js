@@ -56,12 +56,10 @@ class App extends Component {
 		fetch(dataUrl)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log("This is your data", data);
 				this.setState({
 					loading: false,
 					projectsData: data,
 				});
-				console.log(this.state.loading);
 			});
 	}
 
@@ -213,7 +211,7 @@ const ProjectContainer = (props) => {
 		const projectOrder = projectsData.projectOrder;
 		const current_index = projectOrder.indexOf(projectName);
 		const max_index = projectOrder.length - 1;
-		console.log({ projectOrder, current_index });
+		// console.log({ projectOrder, current_index });
 
 		if (current_index >= 0 && current_index !== max_index) {
 			rightArrow.path = `/project${projectOrder[current_index + 1]}`;
@@ -226,7 +224,7 @@ const ProjectContainer = (props) => {
 		}
 	}
 
-	console.log(projectArr);
+	// console.log(projectArr);
 	return (
 		<div>
 			<Project
@@ -271,7 +269,7 @@ const ProjectContainer = (props) => {
 									{content.map((text_item) => {
 										if (typeof text_item === "string") return `${text_item} `;
 										else if (typeof text_item === "object") {
-											console.log(text_item);
+											// console.log(text_item);
 											if (
 												text_item.type === "list" &&
 												Array.isArray(text_item.content)
