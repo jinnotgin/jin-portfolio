@@ -52,7 +52,7 @@ class App extends Component {
 
 	componentDidMount() {
 		// fetch project data
-		const dataUrl = `${process.env.PUBLIC_URL}/data/projects.json`;
+		const dataUrl = `${process.env.PUBLIC_URL}/static/data/projects.json`;
 		fetch(dataUrl)
 			.then((response) => response.json())
 			.then((data) => {
