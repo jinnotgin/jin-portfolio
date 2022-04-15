@@ -84,13 +84,13 @@
 					"content": "background serverless function",
 					"href": "https://github.com/jinnotgin/burpple-wishlist-scraper"
 				},
-				"will continuously collect data from",
+				"will continuously collect data from the",
 				{
 					"type": "link",
 					"content": "Burpple",
 					"href": "https://www.burpple.com/sg"
 				},
-				"service, which serves as FavEats's main food data repository. Specifically, the wishlist activity of Burpple users and food venue data will be contually collected and commited to",
+				"service, which serves as FavEats's main food data repository. Specifically, the wishlist activity of Burpple users and food venue data will be continually collected and commited to a",
 				{
 					"type": "link",
 					"content": "Github",
