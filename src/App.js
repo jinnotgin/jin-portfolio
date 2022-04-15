@@ -21,6 +21,7 @@ import {
 	ProjectLink,
 } from "./project";
 
+import thumb_faveats from "./images/thumb-faveats.png";
 import thumb_coingossip from "./images/thumb-coingossip.png";
 import thumb_smartmirror from "./images/thumb-smartmirror.png";
 import thumb_theresistance from "./images/thumb-theresistance.png";
@@ -126,6 +127,12 @@ class Home extends Component {
 
 				<Work innerRef={sections.work}>
 					<FeaturedWork>
+						<FeaturedWorkItem
+							slug="faveats"
+							image={thumb_faveats}
+							title="FavEats"
+							content="This Progressive Web App helps to provide recommendations of favourite foods nearby the user's location, when can then can be further categorised by cusine types."
+						/>
 						<FeaturedWorkItem
 							slug="coingossip"
 							image={thumb_coingossip}

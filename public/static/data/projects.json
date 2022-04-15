@@ -1,10 +1,125 @@
 {
 	"projectOrder": [
+		"/faveats",
 		"/coingossip",
 		"/smartmirror",
 		"/theresistance",
 		"/alastair"
 	],
+	"/faveats": [
+		{ "type": "name", "content": "FavEats" },
+		{ "type": "label", "content": "FavEats - Value Proposition" },
+		{
+			"type": "title",
+			"content": "Find the food that you love, wherever you go"
+		},
+		{ "type": "image", "content": "faveats-main" },
+		{
+			"type": "text",
+			"content": [
+				"To try out FavEats,",
+				{
+					"type": "link",
+					"content": "visit the site here!",
+					"href": "https://faveats.net/?demo=true"
+				},
+				"👈"
+			]
+		},
+		{ "type": "label", "content": " ", "remarks": "divider" },
+		{ "type": "label", "content": "The Pain Points" },
+		{
+			"type": "text",
+			"content": [
+				"Food has always been an integral part of Singapore's culture and heritage. As a Singaporean 🇸🇬, I'm constantly amazed by Singapore the depth and diversity of the food scene here, despite Singapore's tiny size."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"During my free time, I often find myself going around the island, trying to find out new yummy food places and cusines. Unfortunately, I'm also quite the forgetful person, and I often fail to recall many of the places that I've went before. 😅"
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"To tackle this issue, I set out to solve the following pain points:",
+				{
+					"type": "list",
+					"content": [
+						"Provide recommendations of favourite foods nearby the user's location",
+						"Have a constantly updated listing of the user's favourite food places, which are categorised by cuisine type",
+						"Get the opening hours & directions to the food place",
+						"Find favourited foods place at any specific location"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "faveats-map-selector" },
+		{ "type": "label", "content": "Progressive Web App" },
+		{
+			"type": "text",
+			"content": [
+				"The",
+				{
+					"type": "link",
+					"content": "FavEats User Interface",
+					"href": "https://github.com/jinnotgin/nearby-favourite-eats-ui"
+				},
+
+				"is a Progressive Web App written using the",
+				{
+					"type": "link",
+					"content": "Svelte",
+					"href": "https://svelte.dev/"
+				},
+				"web framework, along with Google Firebase Authentication / Firestore and Tailwind CSS. This UI application is then automatically deployed via Cloudfront Pages, a JAMstack platform."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"In additon, a ",
+				{
+					"type": "link",
+					"content": "background serverless function",
+					"href": "https://github.com/jinnotgin/burpple-wishlist-scraper"
+				},
+				"will continously collect data from",
+				{
+					"type": "link",
+					"content": "Burpple",
+					"href": "https://www.burpple.com/sg"
+				},
+				"service, which serves as FavEats's main food data repository. Specifically, the wishlist activity of Burpple users and food venue data will be contually collected and commited to",
+				{
+					"type": "link",
+					"content": "Github",
+					"href": "https://github.com/jinnotgin/burpple-wishlist-scraper"
+				},
+				"repository."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"This service was launched in June 2021 and is still in active development."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"To try out FavEats,",
+				{
+					"type": "link",
+					"content": "visit the site here!",
+					"href": "https://faveats.net/?demo=true"
+				},
+				"👈"
+			]
+		}
+	],
+
 	"/coingossip": [
 		{ "type": "name", "content": "CoinGossip" },
 		{ "type": "label", "content": "CoinGossip - Value Proposition" },
