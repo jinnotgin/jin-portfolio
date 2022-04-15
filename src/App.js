@@ -131,7 +131,7 @@ class Home extends Component {
 							slug="faveats"
 							image={thumb_faveats}
 							title="FavEats"
-							content="This Progressive Web App helps to provide recommendations of favourite foods nearby the user's location, when can then can be further categorised by cusine types."
+							content="This Progressive Web App provides recommendations of all favourite foods that are nearby the user's current location, or at any other user-specified location."
 						/>
 						<FeaturedWorkItem
 							slug="coingossip"
