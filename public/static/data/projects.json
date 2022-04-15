@@ -37,19 +37,19 @@
 		{
 			"type": "text",
 			"content": [
-				"During my free time, I often find myself going around the island, trying to find out new yummy food places and cusines. Unfortunately, I'm also quite the forgetful person, and I often fail to recall many of the places that I've went before. 😅"
+				"During my free time, I often find myself going around the island, trying out new yummy food places and cusines. Unfortunately, I'm also quite the forgetful person, and I often fail to recall many of the places that I've went before. 😅"
 			]
 		},
 		{
 			"type": "text",
 			"content": [
-				"To tackle this issue, I set out to solve the following pain points:",
+				"To tackle this issue, I set out to achieve the following outcomes:",
 				{
 					"type": "list",
 					"content": [
-						"Provide recommendations of favourite foods that are nearby the user's location, or at any user-specified location",
+						"Be provided with recommendations of favourite foods that are nearby the user's location, or at any user-specified location",
 						"Have a constantly updated listing of the user's favourite food places, which are categorised by cuisine type",
-						"Get the opening hours & directions to the food place"
+						"Get the opening hours & directions to such food places"
 					]
 				}
 			]
