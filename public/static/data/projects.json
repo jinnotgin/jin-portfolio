@@ -84,7 +84,7 @@
 					"content": "background serverless function",
 					"href": "https://github.com/jinnotgin/burpple-wishlist-scraper"
 				},
-				"will continously collect data from",
+				"will continuously collect data from",
 				{
 					"type": "link",
 					"content": "Burpple",
