@@ -47,7 +47,7 @@
 				{
 					"type": "list",
 					"content": [
-						"Provide recommendations of favourite foods that are nearby the user's location, or at any user-specficied location",
+						"Provide recommendations of favourite foods that are nearby the user's location, or at any user-specified location",
 						"Have a constantly updated listing of the user's favourite food places, which are categorised by cuisine type",
 						"Get the opening hours & directions to the food place"
 					]
