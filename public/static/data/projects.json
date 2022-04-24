@@ -78,7 +78,7 @@
 		{
 			"type": "text",
 			"content": [
-				"In additon, a ",
+				"In addition, a ",
 				{
 					"type": "link",
 					"content": "background serverless function",
