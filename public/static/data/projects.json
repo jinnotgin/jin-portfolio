@@ -72,7 +72,7 @@
 					"content": "Svelte",
 					"href": "https://svelte.dev/"
 				},
-				"web framework, along with Google Firebase Authentication / Firestore and Tailwind CSS. This UI application is then automatically deployed via Cloudfront Pages, a JAMstack platform."
+				"web framework, along with Google Firebase Authentication / Firestore and Tailwind CSS. This UI application is then automatically deployed via Cloudflare Pages, a JAMstack platform."
 			]
 		},
 		{
