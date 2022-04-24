@@ -21,7 +21,7 @@
 				{
 					"type": "link",
 					"content": "visit the site here!",
-					"href": "https://faveats.net/?demo=true"
+					"href": "https://faveats.net/?demo"
 				},
 				"👈"
 			]
@@ -112,7 +112,7 @@
 				{
 					"type": "link",
 					"content": "visit the site here!",
-					"href": "https://faveats.net/?demo=true"
+					"href": "https://faveats.net/?demo"
 				},
 				"👈"
 			]
