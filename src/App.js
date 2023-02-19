@@ -119,7 +119,7 @@ class Home extends Component {
 	render() {
 		window.scrollTo(0, 0);
 		window.document.title =
-			"Jin | Full Stack Developer, Agile Business Analyst";
+			"Jin | Product Business Analyst, Full Stack Developer";
 		const { sections } = this.props;
 		return (
 			<div>

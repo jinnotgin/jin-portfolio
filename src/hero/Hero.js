@@ -15,19 +15,19 @@ class Hero extends Component {
 						I’m Jin, a{" "}
 						<a
 							className="inverse"
-							href="https://github.com/jinnotgin"
-							target="_blank"
-						>
-							full stack developer
-						</a>{" "}
-						and an{" "}
-						<a
-							className="inverse"
 							/* href="https://www.agileconnection.com/article/modern-role-agile-business-analyst" */
 							href="https://agility.im/frequent-agile-question/what-is-an-agile-business-analyst/"
 							target="_blank"
 						>
-							agile business analyst
+							product business analyst
+						</a>{" "}
+						and a{" "}
+						<a
+							className="inverse"
+							href="https://github.com/jinnotgin"
+							target="_blank"
+						>
+							full stack developer
 						</a>{" "}
 						{/* who leverages on technology to unlock efficiencies in everyday
 						processes. */}
