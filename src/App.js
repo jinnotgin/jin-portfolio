@@ -21,6 +21,7 @@ import {
 	ProjectLink,
 } from "./project";
 
+import thumb_nowinsg from "./images/thumb-nowinsg.png";
 import thumb_faveats from "./images/thumb-faveats.png";
 import thumb_coingossip from "./images/thumb-coingossip.png";
 import thumb_smartmirror from "./images/thumb-smartmirror.png";
@@ -127,6 +128,12 @@ class Home extends Component {
 
 				<Work innerRef={sections.work}>
 					<FeaturedWork>
+						<FeaturedWorkItem
+							slug="nowinsg"
+							image={thumb_nowinsg}
+							title="Now In Singapore"
+							content="A curated event discovery guide that keeps Singaporeans in the loop on what's happening right now, powered by automation and generative AI."
+						/>
 						<FeaturedWorkItem
 							slug="faveats"
 							image={thumb_faveats}

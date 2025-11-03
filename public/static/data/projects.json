@@ -1,10 +1,109 @@
 {
 	"projectOrder": [
+		"/nowinsg",
 		"/faveats",
 		"/coingossip",
 		"/smartmirror",
 		"/theresistance",
 		"/alastair"
+	],
+	"/nowinsg": [
+		{ "type": "name", "content": "Now In Singapore" },
+		{ "type": "label", "content": "Now In Singapore - Value Proposition" },
+		{
+			"type": "title",
+			"content": "A curated pulse-check on what's happening across Singapore right now."
+		},
+		{ "type": "image", "content": "nowinsg-desktop" },
+		{
+			"type": "text",
+			"content": [
+				"To explore Now In Singapore,",
+				{
+					"type": "link",
+					"content": "visit nowinsg.com.",
+					"href": "https://nowinsg.com"
+				},
+				"👈"
+			]
+		},
+		{ "type": "label", "content": " ", "remarks": "divider" },
+		{ "type": "label", "content": "The Pain Points" },
+		{
+			"type": "text",
+			"content": [
+				"As a Singaporean, I've often heard friends lament that \"There's nothing much to do here.\" Indeed, discovering events, exhibitions, and pop-ups often requires endless googling and sifting through scattered websites - a tiresome process that often ends in frustration. 😢"
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"To tackle this issue, I set out to achieve the following outcomes:",
+				{
+					"type": "list",
+					"content": [
+						"Provide a single consolidated view of events happening across Singapore",
+						"Offer curated summaries and highlights instead of overwhelming raw listings",
+						"Enable quick filtering by time period, location, and event category",
+						"Keep information fresh and up-to-date through automated data gathering"
+					]
+				}
+			]
+		},
+		{ "type": "image", "content": "nowinsg-mobile" },
+		{ "type": "label", "content": "AI-Powered Curation" },
+		{
+			"type": "text",
+			"content": [
+				"Now In Singapore leverages Generative AI technologies 🤖 such as",
+				{
+					"type": "link",
+					"content": "Gemini 2.5 Flash",
+					"href": "https://blog.google/products/gemini/gemini-2-5-model-family-expands/"
+				},
+				" and ",
+				{
+					"type": "link",
+					"content": "GPT-5 mini",
+					"href": "https://openai.com/index/introducing-gpt-5/"
+				},
+				"to automatically compile, summarise, and categorise information from multiple event sources across the web."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"Instead of presenting users with raw event listings, the platform provides:",
+				{
+					"type": "list",
+					"content": [
+						"Concise summaries highlighting what makes each event unique",
+						"Smart categorisation by event type (Arts & Culture, Family & Kids, etc.)",
+						"Filtered views by time period (this weekend, next month, etc.) and location",
+						"Direct links to official sources for seamless planning"
+					]
+				}
+			]
+		},
+		{ "type": "label", "content": "Progressive Web App" },
+		{
+			"type": "text",
+			"content": [
+				"The platform is built as a responsive Progressive Web App using modern web technologies including Vue 3 and Tailwind CSS. It adapts between desktop and mobile experiences, ensuring users can discover events whether they're planning ahead or looking for spontaneous activities on-the-go."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"Backend automation continuously scours event sources and processes data through AI models, with the curated results stored in Cloudflare R2 for fast retrieval."
+			]
+		},
+		{
+			"type": "text",
+			"content": [
+				"This service was launched in October 2024 and continues to evolve with new event sources, smarter recommendations, and enhanced discovery features as Singapore's lifestyle scene grows."
+			]
+		}
 	],
 	"/faveats": [
 		{ "type": "name", "content": "FavEats" },
@@ -14,18 +113,6 @@
 			"content": "Find the food that you love, wherever you go"
 		},
 		{ "type": "image", "content": "faveats-main" },
-		{
-			"type": "text",
-			"content": [
-				"To try out FavEats,",
-				{
-					"type": "link",
-					"content": "visit the site here!",
-					"href": "https://faveats.net/?demo"
-				},
-				"👈"
-			]
-		},
 		{ "type": "label", "content": " ", "remarks": "divider" },
 		{ "type": "label", "content": "The Pain Points" },
 		{
@@ -102,19 +189,7 @@
 		{
 			"type": "text",
 			"content": [
-				"This service was launched in June 2021 and is still in active development."
-			]
-		},
-		{
-			"type": "text",
-			"content": [
-				"To try out FavEats,",
-				{
-					"type": "link",
-					"content": "visit the site here!",
-					"href": "https://faveats.net/?demo"
-				},
-				"👈"
+				"This service was launched in June 2021, and has been discontinued in 2024."
 			]
 		}
 	],
