@@ -1,0 +1,22 @@
+.contact {
+	margin-bottom: 40vh;
+}
+
+.contact__title {
+	flex: 1 1 100%;
+}
+
+.social-list {
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.social-list__item {
+	padding-right: 2rem;
+}
+
+.social-list__entry {
+	list-style-type: none;
+}

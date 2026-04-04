@@ -33,11 +33,9 @@ For all coding efforts (including small ones), complete this order:
 
 1. Discovery pass: read relevant files/config/history.
 2. Requirements gathering: ask focused clarifications for missing context.
-3. Draft `01_scope.md`.
-4. Get user review/approval on `01_scope.md`; incorporate feedback.
-5. Draft `02_implementation-plan.md` aligned to approved scope.
-6. Get user review/approval on `02_implementation-plan.md`; incorporate feedback.
-7. Begin implementation.
+3. Draft `01_scope.md` and `02_implementation-plan.md` together.
+4. Get user review/approval on both documents together; incorporate feedback.
+5. Begin implementation.
 
 Rules:
 
@@ -61,7 +59,7 @@ Rules:
 
 1. Metadata (date, owner, effort folder)
 2. Summary and current state
-3. Scope alignment with approved `01_scope.md`
+3. Scope alignment with `01_scope.md`
 4. Risks and mitigations
 5. Phased execution strategy with exit criteria
 6. Target files, validation plan, assumptions/defaults

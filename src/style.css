@@ -1,0 +1,12 @@
+@import "@fontsource/barlow/400.css";
+@import "./styles/index.css";
+@import "./styles/App.css";
+@import "./styles/nav/Nav.css";
+@import "./styles/hero/Hero.css";
+@import "./styles/work/Work.css";
+@import "./styles/project/Project.css";
+@import "./styles/contact/Contact.css";
+
+#app {
+	min-height: 100vh;
+}
