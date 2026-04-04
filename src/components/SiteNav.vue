@@ -129,14 +129,17 @@ onBeforeUnmount(() => {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	list-style-type: none;
 	margin: 0;
+	min-height: 2.5rem;
 	padding-left: 0;
 }
 
 .nav__list-entry {
 	display: flex;
 	align-items: center;
+	height: 100%;
 }
 
 .nav__button {
@@ -153,7 +156,7 @@ onBeforeUnmount(() => {
 	align-items: center;
 	line-height: 1;
 	margin-left: 0;
-	margin-top: 1rem;
+	margin-top: 0;
 }
 
 .nav__list-entry + .nav__list-entry .nav__list-item {
