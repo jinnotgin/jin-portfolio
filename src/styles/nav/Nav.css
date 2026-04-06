@@ -15,7 +15,6 @@
 .nav__logo {
 	height: 3.5rem;
 	width: 3.5em;
-	transform: rotate(180deg) scaleX(-1);
 	filter: invert(39%) sepia(0%) saturate(50%) hue-rotate(158deg) brightness(91%)
 		contrast(95%);
 	transition: filter 0.3s ease;

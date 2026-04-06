@@ -9,7 +9,9 @@
 					viewBox="0 0 4010 3990"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<path ref="logoMorphPath" class="logo-path" :d="iconPathData" />
+					<g transform="translate(0 3990) scale(1 -1)">
+						<path ref="logoMorphPath" class="logo-path" :d="iconPathData" />
+					</g>
 				</svg>
 			</RouterLink>
 
