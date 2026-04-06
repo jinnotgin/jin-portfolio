@@ -77,7 +77,7 @@ function animateLogo() {
 			transformOrigin: "center center",
 		})
 		.to(logoMorphPath.value, {
-			duration: 0.34,
+			duration: 0.5,
 			morphSVG: {
 				shape: textPathData,
 				shapeIndex: "auto",
@@ -85,12 +85,13 @@ function animateLogo() {
 			ease: "power2.inOut",
 		})
 		.to(logoMorphPath.value, {
-			duration: 0.34,
+			duration: 0.5,
+			delay: 0.2,
 			morphSVG: {
 				shape: iconPathData,
 				shapeIndex: "auto",
 			},
-			ease: "power2.inOut",
+			ease: "power2.in",
 		});
 }
 
